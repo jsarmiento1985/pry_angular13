@@ -21,6 +21,7 @@ export class ListarGastoComponent implements OnInit, OnDestroy{
        
         this.restante = this.restante - data.cantidad;
         this.listGastos.push(data);
+        //
       });
   }
   ngOnDestroy(): void {
