@@ -22,6 +22,7 @@ const rutas: Routes = [
   { path : 'pagno', component: PaginanoexisteComponent},
   { path: 'pre', loadChildren: () => import('./presupuesto/presupuesto.module').then(m => m.PresupuestoModule) },
   { path: 'gas', loadChildren: () => import('./gastos/gastos.module').then(m => m.GastosModule) },
+  { path: 'tar', loadChildren: () => import('./tarjeta/tarjeta.module').then(m => m.TarjetaModule) },
   { path : '**', component: PaginanoexisteComponent},
 ]
 
