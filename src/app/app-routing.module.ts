@@ -14,15 +14,14 @@ const rutas: Routes = [
   { path : 'aula', component: AulasComponent},
   { path : 'depar', component: DepartamentosComponent},
   { path : 'mat', component: MateriasComponent},
-  { path : 'pagno', component: PaginanoexisteComponent},
   { path : '', redirectTo: 'inicio',pathMatch: 'full'},
   { path: 'ven', loadChildren: () => import('./ventas/ventas.module').then(m => m.VentasModule) },
   { path: 'com', loadChildren: () => import('./compras/compras.module').then(m => m.ComprasModule) },
   { path: 'pat', loadChildren: () => import('./patrimonio/patrimonio.module').then(m => m.PatrimonioModule) },
-  { path : 'pagno', component: PaginanoexisteComponent},
   { path: 'pre', loadChildren: () => import('./presupuesto/presupuesto.module').then(m => m.PresupuestoModule) },
   { path: 'gas', loadChildren: () => import('./gastos/gastos.module').then(m => m.GastosModule) },
   { path: 'tar', loadChildren: () => import('./tarjeta/tarjeta.module').then(m => m.TarjetaModule) },
+  { path : 'pagno', component: PaginanoexisteComponent},
   { path : '**', component: PaginanoexisteComponent},
 ]
 
